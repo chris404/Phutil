@@ -73,7 +73,7 @@ class Http {
 	/**
 	 * Request's decoded input data.
 	 * 
-	 * @var array
+	 * @var Dict
 	 */
 	protected $input = null;
 	
@@ -288,5 +288,14 @@ class Http {
 	 */
 	public function getPassword() {
 		return $this->password;
+	}
+	
+	
+	/**
+	 * 
+	 * @return Dict
+	 */
+	public function getInput() {
+		return $this->input;
 	}
 }
